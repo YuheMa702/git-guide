@@ -15,10 +15,15 @@
                 width: 40%;
                 margin: auto;
                 padding-top: 1px;
-                padding-bottom: 3vh;
+                padding-bottom: 1px;
                 padding-left: 3vw;
                 padding-right: 3vw;
                 background-color: honeydew;
+            }
+            textarea {
+                width: 100%;
+                height: min-content;
+                resize: none;         
             }
         </style>
     </head>
@@ -27,18 +32,18 @@
             <h1>Yuhe's Git Reference</h1>
         </header>
         <section>
-            <h2>Configration</h2>
+            <h2>1. Configration</h2>
             <h3>Set user info</h3>
-            <p>git config --global user.name "Your Name"</p>
-            <p>git config --global user.email "Your Email"</p>
+            <textarea readonly> config --global user.name "Your Name"</textarea><br>
+            <textarea readonly> config --global user.email "Your Email"</textarea>
             <h3>View configration</h3>
-            <p>git config --list</p>
+            <textarea readonly> config --list</textarea>
             <h3>Set commit signature</h3>
-            <p>git config --global user.signingkey &lt;key_id&gt;</p>
-            <p>git config --global commit.gpgsign true</p>
+            <textarea readonly> config --global user.signingkey &lt;key_id&gt;</textarea><br>
+            <textarea readonly> config --global commit.gpgsign true</textarea>
         </section>
         <section>
-            <h2>Basics</h2>
+            <h2>2. Basics</h2>
         </section>
     </body>
 </html>
