@@ -73,7 +73,21 @@
             <textarea readonly> git push [remote_name] [branch_name]</textarea>
             <h3>Delete a remote branch</h3>
             <textarea readonly> git push [remote_name] --delete [branch_name]</textarea>
+            <h3>Let local branch to track a remote branch</h3>
+            <textarea readonly> git branch --set-upstream-to=origin/[remote_branch_name] [local_branch_name]</textarea>
         </section>
-
+        <section>
+            <h2>3. Version Control</h2>
+            <h3>Retrieve changes from remote repo</h3>
+            <textarea readonly> git fetch origin</textarea>
+            <h3>Merge another branch to current branch</h3>
+            <textarea readonly> git merge [branch_name]</textarea>
+            <h3>Fetch and merge changes from remote repo to local branch</h3>
+            <textarea readonly> git pull origin [branch_name]</textarea>
+            <h3>Move commits history to a base branch</h3>
+            <textarea readonly> git rebase [base_branch]</textarea>
+            <h3>Show who last modified a file</h3>
+            <textarea readonly> git blame [file_name]</textarea>
+        </section>
     </body>
 </html>
